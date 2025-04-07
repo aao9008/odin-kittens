@@ -7,3 +7,9 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+Kitten.create([
+  { name: "Whiskers", age: 1, cuteness: 10, softness: 9 },
+  { name: "Mittens", age: 2, cuteness: 9, softness: 10 },
+  { name: "Snowball", age: 3, cuteness: 8, softness: 8 }
+])
