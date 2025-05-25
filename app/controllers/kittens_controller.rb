@@ -21,6 +21,12 @@ class KittensController < ApplicationController
     end
   end
 
+  def destroy
+    @kitten = Kitten.find(params[:id])
+    @kitten.destroy
+    redirect_to kittens_path, notice: "Kitten was successfully deleted."
+  end
+
   def new
     @kitten = Kitten.new
   end

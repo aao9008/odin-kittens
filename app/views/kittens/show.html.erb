@@ -5,3 +5,4 @@
 <% end %>
 
 <%= render partial: "kitten", locals: { kitten: @kitten } %>
+<%= button_to "Delete", kitten_path(@kitten), method: :delete, data: { turbo_confirm: "Are you sure?" } %>
