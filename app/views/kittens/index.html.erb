@@ -1,0 +1,7 @@
+<h1>Kittens</h1>
+
+<div>
+    <% @kittens.each do |kitten| %>
+       <%= render partial: "kitten", locals: { kitten: kitten } %>
+    <% end %>
+</div>
